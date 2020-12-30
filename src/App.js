@@ -1,24 +1,46 @@
 import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+
+
+
+
+class Title extends React.Component {
+  render(){
+    return (
+      <div className="title">
+        <div className="name">
+          Quinn Voronin
+        </div>
+        <div className="job">
+          inventor
+        </div>
+        <div className="tagline">
+          building solutions for the future
+        </div>
+        <button className="seemore">
+          see more
+        </button>
+      </div>
+    )
+  }
+}
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <div className="app">
+      <Title />
+      <div className="header-img">
+        <img src="/src/boys.png" alt="Quinn with 3 copies of himself looking into the camera"/>
+      </div>
     </div>
+
   );
 }
 
