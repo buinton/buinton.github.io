@@ -228,9 +228,9 @@ class Landing extends React.Component {
       <div className="landing">
         {this.renderTitle()}
 
-        <img src="boys.png" alt="Quinn with 3 copies of himself looking into the camera" width="900px"
+        <img src="me2.jpg" alt="photo of quinn, cutie :)" width="900px"
       height="auto"
-      style={{width: "100%", height: "400px"}}/>
+      style={{width: "100%", height: "500px"}}/>
       </div>
     )
   }
