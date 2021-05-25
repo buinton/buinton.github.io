@@ -9,8 +9,11 @@ import {
   Link
 } from "react-router-dom";
 
-function mediaEntry(props) {
-
+function renderEntry({obj}) {
+  return (
+    <div className="Entry">
+    </div>
+  );
 }
 
 
@@ -130,7 +133,6 @@ class Nav extends React.Component {
           <Link to="/">
             Quinn Voronin
           </Link>
-          <hr/>
         </div>
 
     )
@@ -167,8 +169,8 @@ class Nav extends React.Component {
     } */
 
     return (
-
-      <div className="nav">
+      //<div className="nav-open">
+      <div className={this.props.showNav ? "nav-open" : "nav-closed"} >
 
         {this.renderWordMark()}
 
@@ -224,32 +226,30 @@ class App extends React.Component {
     super(props);
     this.state = {
       currentMedia: <Landing />,
+      showNavBar: true,
       pages: [{
         "/": <Landing />
       }],
     };
+
   }
 
+  handleNavClick = () => {
 
-  handleScroll = (e) => {
-    /* e.target.clientHeight; */
-    const navHeight = e.target.clientHeight - e.target.scrollTop;
-    console.log(navHeight);
-    this.setState({
-      navHeight: navHeight,
-    })
-  }
+    console.log(this.state.showNavBar);
+    console.log("IN handleNavClick")
+
+    this.setState({showNavBar: !this.state.showNavBar},);
+    console.log(this.state.showNavBar)
+  };
 
 
   renderNavLink = (name, suburl, content) => {
-    let pagescur = this.state.pages;
-    this.state = {
-      pages: pagescur.concat([
-        {
-          suburl: content,
-        }
-      ]),
-    }
+    let newPages = this.state.pages.concat([{suburl: content}])
+    console.log(newPages)
+    this.setState({
+      pages: newPages,
+    })
 
     return (
       <li>
@@ -258,23 +258,33 @@ class App extends React.Component {
         </Link>
       </li>
     )
-  }
+  };
 
   render() {
+    //<button onClick={this.handleNavClick}>
+    //  Click to change nav state, current state: {this.state.showNavBar}
+    //</button>
 
     return (
     <Router>
 
       <div className="app">
+
+
         <div className="nav">
           <Nav
-            handleMediaChange={(i) => this.handleMediaChange(i)}
             pages={this.state.pages}
-            renderNavLink={this.renderNavLink}/>
-        </div>
-        <Content
-          currentMedia={this.state.currentMedia} />
+            renderNavLink={this.renderNavLink}
+            showNav={this.state.showNavBar}
+            />
 
+        </div>
+
+        <div className="content">
+
+          <Content
+            currentMedia={this.state.currentMedia} />
+        </div>
       </div>
     </Router>
     );
