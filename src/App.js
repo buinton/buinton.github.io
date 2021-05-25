@@ -74,19 +74,26 @@ class Capstone extends React.Component {
             <img src="tuner.png" alt="screenshot of part of tuner application" style={{width: "35%"}}/>
 
           <li> Critical Thinking </li>
-            <p> We used critical thinking by using the data that we collected in our experiments to decide what options we were going to use going forward </p>
+            <p> We used critical thinking by using the data that we collected in our experiments to decide what options we were going to use going forward. We tested 2 approaches for this project one Photogrammetry approach (left) and one Laser Scanning approach (right) we collected data on both and used that to make our final choice. </p>
+            <img src="photogrammetry.png" alt="photogrammetry test stand" style={{width: "35%"}}/>
+            <img src="laser.png" alt="Laser test stand" style={{width: "60%"}}/>
+
           <li> Deductive and Inductive Reasoning </li>
             <p> Part of this project was getting a feel for what others were doing to guide us in the right direction. We did this by observing the general industry trends or looking for more specific information </p>
           <li> Understanding of Engineering Principles </li>
-            <p> A large part of out project was taking the research and the ideas that we had for the project and then applying them to the finshed project </p>
+            <p> A large part of out project was taking the research and the ideas that we had for the project and then applying them to the finshed project. </p>
+            <img src="arm2.png" alt="another arm" style={{width: "35%"}}/>
           <li> Effective Communication Skills </li>
             <p> With working on this project remotely during half of the year communication was key because we weren't physically there for each other. We devloped an effective system that works for online enviroments. </p>
           <li> Collaboration/Teamwork </li>
-              <p> We effectively used teamwork throughout the project but particularly in the CAD segments of the project, I am a experienced CAD designer so I had to work with my groupmates that were less experienced </p>
+              <p> We effectively used teamwork throughout the project but particularly in the CAD segments of the project, I am a experienced CAD designer so I had to work with my groupmates that were less experienced. </p>
+              <img src="arm3.png" alt="another arm CAD" style={{width: "25%"}}/>
           <li> Task/Time Management </li>
-              <p> The scale of this project was large meaning that we would have to be efficient if we wanted to complete this project on time. </p>
+              <p> The scale of this project was large meaning that we would have to be efficient if we wanted to complete this project on time. We made a Gantt chart to organize ourselves. </p>
+              <img src="gantt.png" alt="gantt chart" style={{width: "40%"}}/>
           <li> Perseverance/Resilience </li>
-            <p> Perseverance and Resilience is what got this project to where it is today. The hardest part for me mentally was working on the arm, it felt like it had endless issues that I had to work thorugh one by one. </p>
+            <p> Perseverance and Resilience is what got this project to where it is today. The hardest part for me mentally was working on the arm, it felt like it had endless issues that I had to work through one by one. </p>
+            <img src="armsim.png" alt="arm simulator running" style={{width: "40%"}}/>
         </ul>
 
 
